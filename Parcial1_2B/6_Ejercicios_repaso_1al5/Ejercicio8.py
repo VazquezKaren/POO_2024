@@ -9,3 +9,4 @@ Total=Numero*(PorcentajeC)
 print(f"El {Porcentaje} del número {Numero} es: ")
 print(Total)
 
+k=1
