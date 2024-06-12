@@ -11,13 +11,14 @@ texto=["Hola",True,23,3.141516]
 # print(numeros)
 # numeros.sort()
 # print(numeros)
+
 # # #No se puede
 # # print(texto)
 # # texto.sort()
 # # print(texto)
 
 
-# #Añadir elementos
+# Añadir elementos
 # print(texto)
 # texto.insert(len(texto),"True")
 # print(texto)
