@@ -40,7 +40,7 @@ while peliculas:
     os.system("clear")
     print("\n\t Peliculas Disponibles \n 1-.Shrek\n 2-.Luca \n 3-.Titanic \n 4-.Harry Potter \n 5-. Buscando a Nemo \n 5.Divergente \n 6-.Soul")
 
-    print("\n\t..::: Herramientas :::... \n 1-.Agregar \n 2-.Remover \n 3-.Buscar \n ")
+    print("\n\t..::: Herramientas :::... \n 1-.Agregar \n 2-.Remover \n 3-.Buscar \n 4-.Consultar")
 
     peli_editar=input("Ingresa herramienta que se quiere usar")
     
@@ -58,6 +58,12 @@ while peliculas:
 
     elif peli_editar=="Buscar" or peli_editar=="3":
         peliculas=buscar(peliculas)
+        esperaTecla()
+
+    elif peli_editar=="Consultar" or peli_editar=="4":
+        peliculas=Consultar(peliculas)
+        esperaTecla()
+    
     else:
          print("opcion no encontrada")
 

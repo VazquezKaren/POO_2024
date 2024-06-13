@@ -50,7 +50,7 @@ def borrar (peliBorrar):
     peliculas.remove(peliBorrar)
     return peliculas
         
-def buscar (peliBuscar):
+def Consultar (peliBuscar):
     posicion=0
     nonencontre=True
     print(peliculas) 
@@ -63,3 +63,7 @@ def buscar (peliBuscar):
 
             if nonencontre:
                  print("Esta pelicula no esta disponible")
+
+def buscar():
+    print(f"Películas disponibles: {peliculas}")
+    peli_buscar = input
