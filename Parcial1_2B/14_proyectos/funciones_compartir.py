@@ -12,7 +12,7 @@ def solicitarUnDato():
     return numero
 
 def esperaTecla():
-    print("Presiona cualquier tecla para continuar") 
+    print("Presiona cualquier tecla para regresar al menu principal") 
     input()
 
 def getCalculadora(num1=None, num2=None, operacion=None, numero=None):
@@ -67,3 +67,16 @@ def Consultar (peliBuscar):
 def buscar():
     print(f"Películas disponibles: {peliculas}")
     peli_buscar = input
+
+def vaciar():
+    print(peliculas)
+    vaci=input("quiere eliminar todo el contenido? :")
+    if vaci=="si":
+        peliculas.clear()
+        print(peliculas)
+    else:
+        print(peliculas)
+
+def salir():
+    print("Presiona cualquier tecla para regresar al menu principal") 
+    input()
