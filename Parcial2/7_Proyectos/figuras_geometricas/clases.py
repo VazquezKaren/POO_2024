@@ -2,10 +2,11 @@ import os
 import math
 
 class Figuras:
-    def __init__(self, x, y, visible):
+    def __init__(self, x, y, visible, mostrar):
         self.x = x
         self.y = y
         self.visible = visible
+        
 
     def getxValor(self):
         return self.x
@@ -20,9 +21,8 @@ class Figuras:
         self.y = y
 
     def mostrar(self):
-        lista = ["1-.Rectangulo", "2-.Circulo"]
-        print(f"Figuras disponibles:\n{lista}")
-        
+        return self.mostrar
+    
     def estaVisible(self):
         return self.visible
    
@@ -35,8 +35,8 @@ class Figuras:
 class Rectangulo(Figuras):
     def __init__(self, x, y, visible, alto, ancho):
         super().__init__(x, y, visible)
-        self.alto = alto
-        self.ancho = ancho
+        self._alto = alto
+        self._ancho = ancho
     
     def getAncho(self):
         return self.ancho
@@ -59,7 +59,7 @@ class Rectangulo(Figuras):
 class Circulos(Figuras):
     def __init__(self, x, y, visible, radio):
         super().__init__(x, y, visible)
-        self.radio = radio
+        self._radio = radio
 
     def getRadio(self):
         return self.radio
