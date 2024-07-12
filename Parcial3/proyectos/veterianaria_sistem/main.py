@@ -29,6 +29,7 @@ def menu_principal():
                   3-Ver informacion del cliente y mascota
                   4-Actualizar Informacionde Cliente o mascota
                   5-Eliminar Mascota
+                  
                 """)
             op_reg=input("Elige una opcion:")
 
